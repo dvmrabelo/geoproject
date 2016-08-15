@@ -1,0 +1,43 @@
+.hero{
+	padding: 80px 0px;
+	background-image: url("../../img/hero.jpg");
+	background-color: #8fb9a1;
+	background-repeat: no-repeat;
+	height: 55%;
+	margin: auto 0;
+}
+
+.wrap{
+	width: 98%;
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+.formu{
+	padding: 80px 0px;
+}
+
+footer{
+	background-color: #33945d;
+	padding: 80px 0px;
+}
+
+footer a{
+	display: block;
+	color: black;
+}
+
+.cor{
+	background-color: #49b778;
+	color: black;
+	display: 
+}
+.cor a{
+	color: black;
+	}
+.cor a:hover {
+	colr: #959595;
+}
+p{
+	text-align: justify;
+}

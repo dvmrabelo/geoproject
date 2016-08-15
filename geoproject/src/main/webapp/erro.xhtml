@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title><ui:insert name="title">
+            MyImage.com
+        </ui:insert></title>
+	<h:outputStylesheet library="resources/foundation/css"
+		name="foundation.min.css" />
+	<h:outputScript library="resources/foundation/js/vendor"
+		name="foundation.min.js" />
+	<h:outputScript library="resources/foundation/js/vendor"
+		name="jquery.js" />
+
+	<script>
+    $(document).foundation();
+  	</script>
+
+</h:head>
+<h:body>
+	<h:form>
+		<div>
+			<h:outputLabel>ERRO! Link inválido.</h:outputLabel>
+		</div>
+	</h:form>
+</h:body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title><ui:insert name="title">
+            Site teste
+        </ui:insert></title>
+	<link rel="stylesheet" href="resources/foundation/css/foundation.css" />
+	<link rel="stylesheet" href="resources/foundation/css/app.css" />
+
+	<script>
+    $(document).foundation();
+  	</script>
+
+</h:head>
+<h:body>
+	<!-- NAV -->
+
+	<div class="top-bar cor">
+		<div class="top-bar-left">
+			<ul class="dropdown menu">
+				<li class="menu-text cor">StartAction</li>
+
+			</ul>
+		</div>
+		<div class="top-bar-right">
+			<ul class="menu">
+				<li class="cor"><a href="#">Sobre</a></li>
+				<li class="cor"><a href="#">Serviços</a></li>
+				<li class="cor"><a href="#">Contato</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- HERO -->
+	<section class="hero">
+		<div class="wrap">
+			<h1>StartAction</h1>
+			<p>Transformando problemas em soluções!</p>
+		</div>
+	</section>
+	
+	<hr/>
+	<!-- MAIN -->
+	<section class="main">
+		<div class="row">
+			
+			<div class="large-4  columns">
+				<h2>Problemas?</h2>
+				<hr/>
+					<div class="row">
+					<div class="large-10 large-offset-2 columns">
+						<img src="resources/img/what-can-i-do.jpg" />
+						</div>
+					</div>
+					<div class="row">
+						<p>O StartAction busca facilitar a comunicação
+						entre pessoas que com diversos problemas e as mais diversas Startups.
+						Por muitas vezes nos encontramos com algum problema que requer uma solução
+						diverente do que geralmente fazemos, nada melhor do que contar com uma empresa
+						especializada no seu problema para resolvê-lo. Para ter mais informações e ficar
+						por dentro do nosso lançamento cadastre seu email e logo entraremos em contato.</p>
+					</div>
+			</div>
+			<div class="large-4 large-offset-4 columns">
+				<h2>Soluções!</h2>
+				<hr/>
+				<div class="row">
+					<div class="large-10 large-offset-2 columns">
+						<img src="resources/img/problema-solução.jpg" />
+						</div>
+					</div>
+					<div class="row">
+						<p>Por muitas vezes empresas novas não dão certo por falta de divulgação
+						falta de clientes, uma má administração da imagem da empresa.
+						Nós da StartAction buscamos ajudar a solucinar esses tipos de problemas,
+						estamos animados a axiliar sua empresa a crescer e ganhar mais clientes.
+						Para ter mais informações e ficar por dentro do nosso lançamento cadastre
+						sua empresa e logo entraremos em contato.</p>
+					</div>
+			</div>
+		</div>
+		<hr/>
+		<div class="row formu">
+			<div class="large-4 large-offset-4 columns">
+				<h:form>
+				<h2 class="">Cadastre-se</h2>
+				<hr/>
+					<div class="row">
+					<div>
+						<h:outputLabel>Nome</h:outputLabel>
+						<h:inputText value="#{adminCadastroBean.cadastro.nome}" />
+					</div>
+					<div>
+						<h:outputLabel>Email</h:outputLabel>
+						<h:inputText value="#{adminCadastroBean.cadastro.email}" />
+					</div>
+					<h:commandButton class="success button" value="Cadastrar" action="#{adminCadastroBean.save}" />
+					</div>
+				</h:form>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class=" row wrap small-up-1 medium-up-3">
+		<div class="column">
+			<h4>Contato</h4>
+			<hr/>
+			<a href="#"><span>Phone: </span>(77) 98827-4435</a>
+			<a href="#"><span>Email: </span>dvmrabelo@gmail.com</a>
+		</div>
+		<div class="column">
+			<h4>Site Map</h4>
+			<hr/>
+			<a href="#">Sobre</a>
+			<a href="#">Serviços</a>
+			<a href="#">Contato</a>
+		</div>
+		<div class="column">
+		<h4>Redes Sociais</h4>
+			<hr/>
+			<a href="#">Facebook</a>
+			<a href="#">LinkedIn</a>
+			<a href="#">Instagram</a>
+		</div>
+		</div>
+	</footer>
+</h:body>
+
+<script src="resources/foundation/js/app.js"></script>
+<script src="resources/foundation/js/vendor/jquery.js"></script>
+<script src="resources/foundation/js/vendor/foundation.min.js"></script>
+<script src="resources/foundation/js/vendor/what-input.js"></script>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title><ui:insert name="title">
+            Search e Start
+        </ui:insert></title>
+	<link rel="stylesheet" href="resources/foundation/css/foundation.css" type="text/css" media="all" />
+	<script src="resources/foundation/js/vendor/foundation.js"></script>
+	<script> src="resources/foundation/js/vendor/jquery.js"</script>
+
+	<script>
+    $(document).foundation();
+  	</script>
+
+</h:head>
+<h:body>
+
+	<f:metadata>
+		<f:viewParam name="nome" value="#{adminFormBean.emailCode}" />
+		<f:event type="preRenderView" listener="#{adminFormBean.verificacao}" />
+	</f:metadata>
+	<div class="large-6 large-offset-3 columns">
+	<h:form>
+		<div>
+			<label>What are people expecting from your company or service?
+			<h:inputTextarea cols="20" rows="5" value="#{adminFormBean.form.pergunta_1}"/></label>
+		</div>
+		<div>
+			<label>What would they pay for it?
+			<h:inputTextarea cols="20" rows="5" value="#{adminFormBean.form.pergunta_2}"/></label>
+		</div>
+		<div>
+			<label>What do they really need?
+			<h:inputTextarea cols="20" rows="5" value="#{adminFormBean.form.pergunta_3}" /></label>
+		</div>
+		<h:commandButton class="success button" value="Enviar" action="#{adminFormBean.save}" />
+	</h:form>
+	</div>
+</h:body>
+</html>
